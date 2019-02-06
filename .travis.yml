@@ -1,0 +1,20 @@
+language: python
+python:
+  - 2.7
+
+install:
+  - echo "Aquí se instalan las dependencias"
+  #- pip install django
+
+before_script:
+  - echo "Antes de ejecutar un script"
+  - echo "Creación de entorno virtual"
+
+script:
+  - echo "Pruebas unitarias de Calculadora"
+  - python test*.py
+  - echo "Finalizar"
+
+
+notifications:
+email: false
