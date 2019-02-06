@@ -12,5 +12,9 @@ class TestCalculadora(unittest.TestCase):
 		calc = Calculadora()
 		self.assertEquals(11,calc.suma(5,6))
 
+	def test_suma_menos_5_mas_6(self):
+		calc = Calculadora()
+		self.assertEquals(5,calc.suma(-5,10))
+
 if __name__ == '__main__':
 	unittest.main()		
